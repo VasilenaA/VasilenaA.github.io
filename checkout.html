@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="icon" type="image/x-icon" href="pictures/logo.png">
+    <script src="javascript/jquery.js"></script>
+    <script src="javascript/dist/jquery.validate.min.js"></script>
+    <script src="app.js"></script>
+
+</head>
+<body>
+    <nav class="nav">
+        <img id="logo" src="pictures/logo.png" alt="logo for nav">
+    <ul class="nav__list">
+        <li class="nav__listitem"><a href="index.html">Modern Vision</a></li>
+        <li class="nav__listitem">Menu & order
+            <ul class="nav__listitemdrop">
+            <li><a href="menu.html">See our 3 course menu</a></li>
+            </ul>
+        </li>
+        <li class="nav__listitem"><a href="contacts.html">Contacts & about us</a></li>
+    </ul>
+    </nav>
+<div class="container">
+    <form id="checkoutForm" method="POST" action="#">
+        <div class="row">
+            <div class="col">
+                <h3 class="title">billing address</h3>
+                    <div class="inputBox">
+                        <label for="firstname">First name :</label>
+                        <input id="firstname" name="firstname" type="text" placeholder="John" >
+                    </div>
+                    <div class="inputBox">
+                        <label for="lastname">Last name :</label>
+                        <input id="lastname" name="lastname" type="text" placeholder="deo" >
+                    </div>
+                    <div class="inputBox">
+                        <label for="email">Email :</label>
+                        <input id="email" name="email" type="email" placeholder="example@example.com" >
+                    </div>
+                    <div class="inputBox">
+                        <label for="password">Password:</label>
+                        <input id="password" name="password" type="password" placeholder="Johndeo20#">
+                        <div id="pswd_info">
+                            <h4>Password must meet the following requirements:</h4>
+                            <ul>
+                                <li id="letter" class="invalid">At least <strong>one letter</strong></li>
+                                <li id="capital" class="invalid">At least <strong>one capital letter</strong></li>
+                                <li id="number" class="invalid">At least <strong>one number</strong></li>
+                                <li id="length" class="invalid">Be at least <strong>8 characters</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <label for="address">Address :</label>
+                        <input id="address" name="address" type="text" placeholder="room - street - locality" >
+                    </div>
+                    <div class="inputBox">
+                        <label for="city">City :</label>
+                        <input id="city" name="city" type="text" placeholder="Plovdiv" >
+                    </div>         
+                    <div class="inputBox">
+                        <label for="time">Choose delivery time :</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+            </div>
+            <div class="col">
+                    <h3 class="title">Payment</h3>
+                    <div class="inputBox">
+                        <label>Cards accepted :</label>
+                        <img src="pictures/card_img.png" alt="" >
+                    </div>
+                    <div class="inputBox">
+                        <label for="cardFirstName">First name on card :</label>
+                        <input type="text" id="cardFirstName" name="cardFirstName" placeholder="john" >
+                    </div>
+                    <div class="inputBox">
+                        <label for="cardLastName">Last name on card :</label>
+                        <input type="text" id="cardLastName" name="cardLastName" placeholder="deo" >
+                    </div>
+                    <div class="inputBox">
+                        <label for="cardNumber">Credit card number :</label>
+                        <input type="number" id="cardNumber" name="cardNumber" placeholder="1111-2222-3333-4444" >
+                    </div>
+                    <div class="inputBox">
+                        <label for="expMonth">Exp month (january - 1) :</label>
+                        <input type="number" id="expMonth" name="expMonth" placeholder="1-12" >
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="expYear">Exp year :</label>
+                            <input type="number" id="expYear" name="expYear" placeholder="2023" >
+                        </div>
+                        <div class="inputBox">
+                            <label for="cvv">CVV :</label>
+                            <input type="number" id="cvv" name="cvv" placeholder="123" >
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <input type="submit" value="Finish order" class="submit-btn" onclick="validateForm(); return false;">
+    </form>
+    <div class="thank-you-box" >
+        <h1>Thank you for your order</h1><br>
+        <h2> We are starting to prepare it and it will be with you very soon</h2><br>
+        <a class="back" href="homePage.html">Back to home page</a>
+        <h3><br>You will be redirected after <span>10</span> seconds to the main page!</h3>
+    </div>
+</div>          
+</body>
+</html>
