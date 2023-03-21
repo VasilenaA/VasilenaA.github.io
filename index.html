@@ -1,77 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap" rel="stylesheet">
+
     <title>MV restaurant</title>
-    <link rel="stylesheet" href="homePage.css">
+    <link rel="stylesheet" href="homePage.css" />
     <script src="javascript/jquery.js"></script>
     <script src="javascript/dist/jquery.validate.min.js"></script>
     <script src="app.js"></script>
-    <link rel="icon" type="image/x-icon" href="pictures/logo.png">
-</head>
-<body>
-    <header>Welcome to restaurant Modern Vision</header>
-        <nav class="nav">
-        <img id="logo" src="pictures/logo.png" alt="logo for nav">
-            <ul class="nav__list">
-            <li class="nav__listitem"><a href="index.html">Modern Vision</a></li>
-            <li class="nav__listitem">Menu & order
-                <ul class="nav__listitemdrop">
-                    <li><a href="menu.html">See our 3 course menu</a></li>
-                </ul>
-            </li>
-            <li class="nav__listitem"><a href="contacts.html">Contacts & about us</a></li>
-            </ul>
-        </nav>
-<main>
-    <section>
-        <h1><span> Modern Vision restaurant </span>  is a cozy place with a great atmosphere to visit with your loved ones.</h1>
+    <link rel="icon" type="image/x-icon" href="pictures/logo.png" />
+  </head>
+  <body>
+    <header>Welcome to Restaurant Modern Vision</header>
+    <nav class="nav">
+      <img id="logo" src="pictures/logo.png" alt="logo for nav" />
+      <ul class="nav__list">
+        <li class="nav__listitem"><a href="index.html">Modern Vision</a></li>
+        <li class="nav__listitem">
+          Menu & order
+          <ul class="nav__listitemdrop">
+            <li><a href="menu.html">See our 3 course menu</a></li>
+          </ul>
+        </li>
+        <li class="nav__listitem">
+          <a href="contacts.html">Contacts & about us</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h1>
+          <span> Modern Vision restaurant </span> is a cozy place with a great
+          atmosphere to visit with your loved ones.
+        </h1>
         <a href="menu.html"> <button class="btnMenu">PLACE AN ORDER</button></a>
-    </section>
-    <section>
-        <article >
-            <div class="item-box">
-                <h3>First course</h3>
-                <p>For the first course, you will be able to choose from our soups made from unique homemade recipes.
-                    Your choice will be between cold and hot soups.
-                    They are also served with homemade, just-baked bread.
-                </p>
-            </div>
+      </section>
+      <section>
+        <article>
+          <div class="item-box">
+            <h3>First course</h3>
+            <p>
+              For the first course, you will be able to choose from our soups
+              made from unique homemade recipes. Your choice will be between
+              cold and hot soups. They are also served with homemade, just-baked
+              bread.
+            </p>
+          </div>
         </article>
         <article>
-            <div class="item-box">
+          <div class="item-box">
             <h3>Second course</h3>
-            <p>For the second course, you have a choice of several well-chosen main courses. For meat and fish, we trust the
-                best suppliers, so they are always fresh and taste great.
-                All other products are bought from local vendors with good and fresh produce.</p>
-            </div>   
+            <p>
+              For the second course, you have a choice of several well-chosen
+              main courses. For meat and fish, we trust the best suppliers, so
+              they are always fresh and taste great. All other products are
+              bought from local vendors with good and fresh produce.
+            </p>
+          </div>
         </article>
         <article>
-            <div class="item-box">
+          <div class="item-box">
             <h3>Third course</h3>
-            <p>For the third course, we offer a selection of desserts based on popular recipes, as well as a few homemade
-                recipes.
-                We encourage you to pair them with one of our homemade lemonades for maximum delight.</p>
-            </div>
+            <p>
+              For the third course, we offer a selection of desserts based on
+              popular recipes, as well as a few homemade recipes. We encourage
+              you to pair them with one of our homemade lemonades for maximum
+              delight.
+            </p>
+          </div>
         </article>
-    </section>
-</main>
-<footer>
-    <div class="footer-body">
+      </section>
+    </main>
+    <footer>
+      <div class="footer-body">
         <div class="footer__text">
-        Don't forget to leave a review for us on some of the following sites:
+          Don't forget to leave a review for us on some of the following sites:
         </div>
         <div class="footer__images">
-            <a href="https://www.tripadvisor.com/UserReview" target="_blank">
-            <img class="footer__Image" id="footerPic1" src="pictures/tripadvisor.png" alt="tripadvisor">
-            </a>
-            <a href="https://www.google.com/maps/" target="_blank">
-            <img class="footer__Image" id="footerPic2" src="pictures/maps.webp" alt="google maps">
-            </a>
+          <a href="https://www.tripadvisor.com/UserReview" target="_blank">
+            <img
+              class="footer__Image"
+              id="footerPic1"
+              src="pictures/tripadvisor.png"
+              alt="tripadvisor"
+            />
+          </a>
+          <a href="https://www.google.com/maps/" target="_blank">
+            <img
+              class="footer__Image"
+              id="footerPic2"
+              src="pictures/maps.webp"
+              alt="google maps"
+            />
+          </a>
         </div>
-    </div> 
-</footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
